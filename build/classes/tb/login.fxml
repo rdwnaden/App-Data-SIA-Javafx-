@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="pane_login" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6495ED;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Text fill="WHITE" layoutX="53.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sistem Informasi Akademik" textAlignment="CENTER" wrappingWidth="197.33984375">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="323.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txt_username" layoutX="323.0" layoutY="139.0" prefHeight="35.0" prefWidth="210.0" style="-fx-border-radius: 10px;" />
+      <PasswordField fx:id="txt_password" layoutX="323.0" layoutY="219.0" prefHeight="35.0" prefWidth="210.0" />
+      <Text fill="WHITE" layoutX="323.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn_login" layoutX="458.0" layoutY="277.0" mnemonicParsing="false" onAction="#Login" prefHeight="27.0" prefWidth="75.0" style="-fx-background-color: #FFFFFF;" text="Login" textFill="CORNFLOWERBLUE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="282.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/person-fill.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="282.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/lock-fill.png" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="35.0" prefWidth="600.0" style="-fx-background-color: #F0F8FF;" />
+      <Pane layoutY="369.0" prefHeight="35.0" prefWidth="600.0" style="-fx-background-color: #F0F8FF;" />
+      <Text layoutX="20.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2021@Kelompok 5" wrappingWidth="162.13671875">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
